@@ -21,7 +21,7 @@ public class Github_act extends AppCompatActivity {
         spin = (Spinner) findViewById(R.id.spinLibros);
         text = (TextView) findViewById(R.id.tv);
 
-        String[] Libros = {"Farenheit", "Revival", "El Alquimista"};
+        String[] Libros = {"Farenheit", "Revival", "El Alquimista", "El poder", "Despertar"};
 
         ArrayAdapter<String> adapt = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Libros);
         spin.setAdapter(adapt);
@@ -32,7 +32,7 @@ public class Github_act extends AppCompatActivity {
         String libro = spin.getSelectedItem().toString();
 
         if (libro.equals("Farenheit")) {
-            int operacion = 5000;
+            int operacion = 7000;
             String valor = String.valueOf(operacion);
             text.setText("El valor de " + libro + " es: " + valor);
             return;
@@ -40,7 +40,7 @@ public class Github_act extends AppCompatActivity {
         }
 
         if (libro.equals("Revival")) {
-            int operacion = 12000;
+            int operacion = 22000;
             String valor = String.valueOf(operacion);
             text.setText("El valor de " + libro + " es: " + valor);
             return;
@@ -49,6 +49,22 @@ public class Github_act extends AppCompatActivity {
 
         if (libro.equals("El Alquimista")) {
             int operacion = 45000;
+            String valor = String.valueOf(operacion);
+            text.setText("El valor de " + libro + " es: " + valor);
+            return;
+
+        }
+
+        if (libro.equals("El poder")) {
+            int operacion = 88000;
+            String valor = String.valueOf(operacion);
+            text.setText("El valor de " + libro + " es: " + valor);
+            return;
+
+        }
+
+        if (libro.equals("Despertar")) {
+            int operacion = 156000;
             String valor = String.valueOf(operacion);
             text.setText("El valor de " + libro + " es: " + valor);
             return;
